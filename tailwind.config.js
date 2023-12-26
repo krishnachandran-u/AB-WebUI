@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    './pages/**/*.{ts,tsx,js,jsx}',
+    './components/**/*.{ts,tsx,js,jsx}',
+    './app/**/*.{ts,tsx,js,jsx}',
+    './src/**/*.{ts,tsx,js,jsx}',
   ],
   prefix: "",
   theme: {
@@ -14,6 +14,15 @@ module.exports = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+      },
+      extend: {
+        colors: {
+          abblue: '#ff3366',
+          anotherColor: '#3399cc',
+        },
+        fontFamily: {
+          rethinksans: ['Rethink Sans', 'sans-serif'],
+        }
       },
     },
     extend: {
